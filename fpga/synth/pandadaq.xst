@@ -1,0 +1,10 @@
+run
+-ifn pandadaq.prj
+-top pandadaq
+-ifmt MIXED
+-opt_mode SPEED
+-opt_level 2
+-resource_sharing no
+-reduce_control_sets auto
+-ofn pandadaq.ngc
+-p xc6slx9-tqg144-2

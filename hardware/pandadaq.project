@@ -1,0 +1,5 @@
+schematics	pandadaq_pg1.sch pandadaq_pg2.sch pandadaq_pg3.sch pandadaq_pg4.sch
+output-name	pandadaq
+elements-dir	pcb-elements
+skip-m4
+

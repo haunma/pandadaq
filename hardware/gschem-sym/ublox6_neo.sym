@@ -1,0 +1,282 @@
+v 20111201 1
+P 100 2500 400 2500 1 0 0
+{
+T 300 2550 5 8 1 1 0 6 1
+pinnumber=1
+T 300 2450 5 8 0 1 0 8 1
+pinseq=1
+T 450 2500 9 8 1 1 0 0 1
+pinlabel=NC
+T 450 2500 5 8 0 1 0 2 1
+pintype=in
+}
+P 100 2300 400 2300 1 0 0
+{
+T 300 2350 5 8 1 1 0 6 1
+pinnumber=2
+T 300 2250 5 8 0 1 0 8 1
+pinseq=2
+T 450 2300 9 8 1 1 0 0 1
+pinlabel=\_SS\_
+T 450 2300 5 8 0 1 0 2 1
+pintype=in
+}
+P 100 2100 400 2100 1 0 0
+{
+T 300 2150 5 8 1 1 0 6 1
+pinnumber=3
+T 300 2050 5 8 0 1 0 8 1
+pinseq=3
+T 450 2100 9 8 1 1 0 0 1
+pinlabel=TPULSE
+T 450 2100 5 8 0 1 0 2 1
+pintype=out
+}
+P 100 1900 400 1900 1 0 0
+{
+T 300 1950 5 8 1 1 0 6 1
+pinnumber=4
+T 300 1850 5 8 0 1 0 8 1
+pinseq=4
+T 450 1900 9 8 1 1 0 0 1
+pinlabel=EXTINT0
+T 450 1900 5 8 0 1 0 2 1
+pintype=in
+}
+P 100 1700 400 1700 1 0 0
+{
+T 300 1750 5 8 1 1 0 6 1
+pinnumber=5
+T 300 1650 5 8 0 1 0 8 1
+pinseq=5
+T 450 1700 9 8 1 1 0 0 1
+pinlabel=USB_DM
+T 450 1700 5 8 0 1 0 2 1
+pintype=io
+}
+P 100 1500 400 1500 1 0 0
+{
+T 300 1550 5 8 1 1 0 6 1
+pinnumber=6
+T 300 1450 5 8 0 1 0 8 1
+pinseq=6
+T 450 1500 9 8 1 1 0 0 1
+pinlabel=UDB_DP
+T 450 1500 5 8 0 1 0 2 1
+pintype=io
+}
+P 100 1300 400 1300 1 0 0
+{
+T 300 1350 5 8 1 1 0 6 1
+pinnumber=7
+T 300 1250 5 8 0 1 0 8 1
+pinseq=7
+T 450 1300 9 8 1 1 0 0 1
+pinlabel=VDDUSB
+T 450 1300 5 8 0 1 0 2 1
+pintype=pwr
+}
+P 100 1100 400 1100 1 0 0
+{
+T 300 1150 5 8 1 1 0 6 1
+pinnumber=8
+T 300 1050 5 8 0 1 0 8 1
+pinseq=8
+T 450 1100 9 8 1 1 0 0 1
+pinlabel=RESV
+T 450 1100 5 8 0 1 0 2 1
+pintype=io
+}
+P 100 900 400 900 1 0 0
+{
+T 300 950 5 8 1 1 0 6 1
+pinnumber=9
+T 300 850 5 8 0 1 0 8 1
+pinseq=9
+T 450 900 9 8 1 1 0 0 1
+pinlabel=VCC_RF
+T 450 900 5 8 0 1 0 2 1
+pintype=pwr
+}
+P 100 700 400 700 1 0 0
+{
+T 300 750 5 8 1 1 0 6 1
+pinnumber=10
+T 300 650 5 8 0 1 0 8 1
+pinseq=10
+T 450 700 9 8 1 1 0 0 1
+pinlabel=GND
+T 450 700 5 8 0 1 0 2 1
+pintype=pwr
+}
+P 100 500 400 500 1 0 0
+{
+T 300 550 5 8 1 1 0 6 1
+pinnumber=11
+T 300 450 5 8 0 1 0 8 1
+pinseq=11
+T 450 500 9 8 1 1 0 0 1
+pinlabel=RF_IN
+T 450 500 5 8 0 1 0 2 1
+pintype=in
+}
+P 100 300 400 300 1 0 0
+{
+T 300 350 5 8 1 1 0 6 1
+pinnumber=12
+T 300 250 5 8 0 1 0 8 1
+pinseq=12
+T 450 300 9 8 1 1 0 0 1
+pinlabel=GND
+T 450 300 5 8 0 1 0 2 1
+pintype=pwr
+}
+P 2300 2500 2000 2500 1 0 0
+{
+T 2100 2550 5 8 1 1 0 0 1
+pinnumber=13
+T 2100 2450 5 8 0 1 0 2 1
+pinseq=13
+T 1950 2500 9 8 1 1 0 6 1
+pinlabel=GND
+T 1950 2500 5 8 0 1 0 8 1
+pintype=pwr
+}
+P 2300 2300 2000 2300 1 0 0
+{
+T 2100 2350 5 8 1 1 0 0 1
+pinnumber=14
+T 2100 2250 5 8 0 1 0 2 1
+pinseq=14
+T 1950 2300 9 8 1 1 0 6 1
+pinlabel=MOSI/C0
+T 1950 2300 5 8 0 1 0 8 1
+pintype=io
+}
+P 2300 2100 2000 2100 1 0 0
+{
+T 2100 2150 5 8 1 1 0 0 1
+pinnumber=15
+T 2100 2050 5 8 0 1 0 2 1
+pinseq=15
+T 1950 2100 9 8 1 1 0 6 1
+pinlabel=MISO/C1
+T 1950 2100 5 8 0 1 0 8 1
+pintype=in
+}
+P 2300 1900 2000 1900 1 0 0
+{
+T 2100 1950 5 8 1 1 0 0 1
+pinnumber=16
+T 2100 1850 5 8 0 1 0 2 1
+pinseq=16
+T 1950 1900 9 8 1 1 0 6 1
+pinlabel=SCK/C2
+T 1950 1900 5 8 0 1 0 8 1
+pintype=in
+}
+P 2300 1700 2000 1700 1 0 0
+{
+T 2100 1750 5 8 1 1 0 0 1
+pinnumber=17
+T 2100 1650 5 8 0 1 0 2 1
+pinseq=17
+T 1950 1700 9 8 1 1 0 6 1
+pinlabel=RESV
+T 1950 1700 5 8 0 1 0 8 1
+pintype=in
+}
+P 2300 1500 2000 1500 1 0 0
+{
+T 2100 1550 5 8 1 1 0 0 1
+pinnumber=18
+T 2100 1450 5 8 0 1 0 2 1
+pinseq=18
+T 1950 1500 9 8 1 1 0 6 1
+pinlabel=SDA2
+T 1950 1500 5 8 0 1 0 8 1
+pintype=io
+}
+P 2300 1300 2000 1300 1 0 0
+{
+T 2100 1350 5 8 1 1 0 0 1
+pinnumber=19
+T 2100 1250 5 8 0 1 0 2 1
+pinseq=19
+T 1950 1300 9 8 1 1 0 6 1
+pinlabel=SCL2
+T 1950 1300 5 8 0 1 0 8 1
+pintype=io
+}
+P 2300 1100 2000 1100 1 0 0
+{
+T 2100 1150 5 8 1 1 0 0 1
+pinnumber=20
+T 2100 1050 5 8 0 1 0 2 1
+pinseq=20
+T 1950 1100 9 8 1 1 0 6 1
+pinlabel=TXD1
+T 1950 1100 5 8 0 1 0 8 1
+pintype=out
+}
+P 2300 900 2000 900 1 0 0
+{
+T 2100 950 5 8 1 1 0 0 1
+pinnumber=21
+T 2100 850 5 8 0 1 0 2 1
+pinseq=21
+T 1950 900 9 8 1 1 0 6 1
+pinlabel=RXD1
+T 1950 900 5 8 0 1 0 8 1
+pintype=in
+}
+P 2300 700 2000 700 1 0 0
+{
+T 2100 750 5 8 1 1 0 0 1
+pinnumber=22
+T 2100 650 5 8 0 1 0 2 1
+pinseq=22
+T 1950 700 9 8 1 1 0 6 1
+pinlabel=V_BAK
+T 1950 700 5 8 0 1 0 8 1
+pintype=pwr
+}
+P 2300 500 2000 500 1 0 0
+{
+T 2100 550 5 8 1 1 0 0 1
+pinnumber=23
+T 2100 450 5 8 0 1 0 2 1
+pinseq=23
+T 1950 500 9 8 1 1 0 6 1
+pinlabel=VCC
+T 1950 500 5 8 0 1 0 8 1
+pintype=pwr
+}
+P 2300 300 2000 300 1 0 0
+{
+T 2100 350 5 8 1 1 0 0 1
+pinnumber=24
+T 2100 250 5 8 0 1 0 2 1
+pinseq=24
+T 1950 300 9 8 1 1 0 6 1
+pinlabel=GND
+T 1950 300 5 8 0 1 0 8 1
+pintype=pwr
+}
+B 400 100 1600 2600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 2000 2800 8 10 1 1 0 6 1
+refdes=U?
+T 400 2800 9 10 1 0 0 0 1
+u-blox NEO6
+T 400 3000 5 10 0 0 0 0 1
+device=u-blox NEO6
+T 400 3200 5 10 0 0 0 0 1
+footprint=ublox6_neo.fp
+T 400 3400 5 10 0 0 0 0 1
+author=Mark Haun <haunma(AT)keteu.org>
+T 400 3600 5 10 0 0 0 0 1
+documentation=http://www.u-blox.com/
+T 400 3800 5 10 0 0 0 0 1
+description=GPS module
+T 400 4000 5 10 0 0 0 0 1
+numslots=0

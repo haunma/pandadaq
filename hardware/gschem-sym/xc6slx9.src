@@ -1,0 +1,201 @@
+# This is the template file for creating symbols with tragesym						
+# every line starting with '#' is a comment line.						
+# save it as text file with tab separated cells and start tragesym						
+						
+[options]						
+# wordswap swaps labels if the pin is on the right side an looks like this:						
+# "PB1 (CLK)". That's useful for micro controller port labels						
+# rotate_labels rotates the pintext of top and bottom pins						
+# this is useful for large symbols like FPGAs with more than 100 pins						
+# sort_labels will sort the pins by it's labels						
+# useful for address ports, busses, ...						
+wordswap	yes					
+rotate_labels	yes					
+sort_labels	no					
+generate_pinseq	yes					
+sym_width	11000					
+pinwidthvertical	250					
+pinwidthhorizontal	250					
+						
+[geda_attr]						
+# name will be printed in the top of the symbol						
+# if you have a device with slots, you'll have to use slot= and slotdef=						
+# use comment= if there are special information you want to add						
+version	20060113 1					
+name	XC6SLX9					
+device	XC6SLX9					
+refdes	U?					
+footprint						
+description	Spartan 6 FPGA					
+documentation	http://www.xilinx.com/					
+author	Mark Haun <haunma(AT)keteu.org>					
+numslots	0					
+dist-license						
+use-license						
+#slot	1					
+#slotdef	1:					
+#slotdef	2:					
+#slotdef	3:					
+#slotdef	4:					
+#comment						
+#comment						
+#comment						
+						
+[pins]						
+# tabseparated list of pin descriptions						
+#						
+# pinnr is the physical number of the pin						
+# seq is the pinseq= attribute, leave it blank if it doesn't matter						
+# type can be (in, out, io, oc, oe, pas, tp, tri, clk, pwr)						
+# style can be (line,dot,clk,dotclk,none). none if only want to add a net						
+# posit. can be (l,r,t,b) or empty for nets						
+# net specifies the name of the net. Vcc or GND for example.						
+# label represents the pinlabel.						
+#	negation lines can be added with "\_" example: \_enable\_ 					
+#	if you want to write a "\" use "\\" as escape sequence					
+#						
+#pinnr	seq	type	style	posit.	net	label
+1		io	line	l		IO_L83N_VREF_3
+2		io	line	l		IO_L83P_3
+3		pwr	line	l		GND
+4		pwr	line	l		VCCO_3
+5		io	line	l		IO_L52N_3
+6		io	line	l		IO_L52P_3
+7		io	line	l		IO_L51N_3
+8		io	line	l		IO_L51P_3
+9		io	line	l		IO_L50N_3
+10		io	line	l		IO_L50P_3
+11		io	line	l		IO_L49N_3
+12		io	line	l		IO_L49P_3
+13		pwr	line	l		GND
+14		io	line	l		IO_L44N_GCLK20_3
+15		io	line	l		IO_L44P_GCLK21_3
+16		io	line	l		IO_L43N_GCLK22_IRDY2_3
+17		io	line	l		IO_L43P_GCLK23_3
+18		pwr	line	l		VCCO_3
+19		pwr	line	l		VCCINT
+20		pwr	line	l		VCCAUX
+21		io	line	l		IO_L42N_GCLK24_3
+22		io	line	l		IO_L42P_GCLK25_TRDY2_3
+23		io	line	l		IO_L41N_GCLK26_3
+24		io	line	l		IO_L41P_GCLK27_3
+25		pwr	line	l		GND
+26		io	line	l		IO_L37N_3
+27		io	line	l		IO_L37P_3
+28		pwr	line	l		VCCINT
+29		io	line	l		IO_L36N_3
+30		io	line	l		IO_L36P_3
+31		pwr	line	l		VCCO_3
+32		io	line	l		IO_L2N_3
+33		io	line	l		IO_L2P_3
+34		io	line	l		IO_L1N_VREF_3
+35		io	line	l		IO_L1P_3
+36		pwr	line	l		VCCAUX
+37		io	line	b		PROGRAM_B_2
+38		io	line	b		IO_L65N_CSO_B_2
+39		io	line	b		IO_L65P_INIT_B_2
+40		io	line	b		IO_L64N_D9_2
+41		io	line	b		IO_L64P_D8_2
+42		pwr	line	b		VCCO_2
+43		io	line	b		IO_L62N_D6_2
+44		io	line	b		IO_L62P_D5_2
+45		io	line	b		IO_L49N_D4_2
+46		io	line	b		IO_L49P_D3_2
+47		io	line	b		IO_L48N_RDWR_B_VREF_2
+48		io	line	b		IO_L48P_D7_2
+49		pwr	line	b		GND
+50		io	line	b		IO_L31N_GCLK30_D15_2
+51		io	line	b		IO_L31P_GCLK31_D14_2
+52		pwr	line	b		VCCINT
+53		pwr	line	b		VCCAUX
+54		pwr	line	b		GND
+55		io	line	b		IO_L30N_GCLK0_USERCCLK_2
+56		io	line	b		IO_L30P_GCLK1_D13_2
+57		io	line	b		IO_L14N_D12_2
+58		io	line	b		IO_L14P_D11_2
+59		io	line	b		IO_L13N_D10_2
+60		io	line	b		IO_L13P_M1_2
+61		io	line	b		IO_L12N_D2_MISO3_2
+62		io	line	b		IO_L12P_D1_MISO2_2
+63		pwr	line	b		VCCO_2
+64		io	line	b		IO_L3N_MOSI_CSI_B_MISO0_2
+65		io	line	b		IO_L3P_D0_DIN_MISO_MISO1_2
+66		io	line	b		IO_L2N_CMPMOSI_2
+67		io	line	b		IO_L2P_CMPCLK_2
+68		pwr	line	b		GND
+69		io	line	b		IO_L1N_M0_CMPMISO_2
+70		io	line	b		IO_L1P_CCLK_2
+71		io	line	b		DONE_2
+72		io	line	b		CMPCS_B_2
+73		io	line	r		SUSPEND
+74		io	line	r		IO_L74N_DOUT_BUSY_1
+75		io	line	r		IO_L74P_AWAKE_1
+76		pwr	line	r		VCCO_1
+77		pwr	line	r		GND
+78		io	line	r		IO_L47N_1
+79		io	line	r		IO_L47P_1
+80		io	line	r		IO_L46N_1
+81		io	line	r		IO_L46P_1
+82		io	line	r		IO_L45N_1
+83		io	line	r		IO_L45P_1
+84		io	line	r		IO_L43N_GCLK4_1
+85		io	line	r		IO_L43P_GCLK5_1
+86		pwr	line	r		VCCO_1
+87		io	line	r		IO_L42N_GCLK6_TRDY1_1
+88		io	line	r		IO_L42P_GCLK7_1
+89		pwr	line	r		VCCINT
+90		pwr	line	r		VCCAUX
+91		pwr	line	r		GND
+92		io	line	r		IO_L41N_GCLK8_1
+93		io	line	r		IO_L41P_GCLK9_IRDY1_1
+94		io	line	r		IO_L40N_GCLK10_1
+95		io	line	r		IO_L40P_GCLK11_1
+96		pwr	line	r		GND
+97		io	line	r		IO_L34N_1
+98		io	line	r		IO_L34P_1
+99		io	line	r		IO_L33N_1
+100		io	line	r		IO_L33P_1
+101		io	line	r		IO_L32N_1
+102		io	line	r		IO_L32P_1
+103		pwr	line	r		VCCO_1
+104		io	line	r		IO_L1N_VREF_1
+105		io	line	r		IO_L1P_1
+106		io	line	r		TDO
+107		io	line	r		TMS
+108		pwr	line	r		GND
+109		io	line	t		TCK
+110		io	line	t		TDI
+111		io	line	t		IO_L66N_SCP0_0
+112		io	line	t		IO_L66P_SCP1_0
+113		pwr	line	t		GND
+114		io	line	t		IO_L65N_SCP2_0
+115		io	line	t		IO_L65P_SCP3_0
+116		io	line	t		IO_L64N_SCP4_0
+117		io	line	t		IO_L64P_SCP5_0
+118		io	line	t		IO_L63N_SCP6_0
+119		io	line	t		IO_L63P_SCP7_0
+120		io	line	t		IO_L62N_VREF_0
+121		io	line	t		IO_L62P_0
+122		pwr	line	t		VCCO_0
+123		io	line	t		IO_L37N_GCLK12_0
+124		io	line	t		IO_L37P_GCLK13_0
+125		pwr	line	t		VCCO_0
+126		io	line	t		IO_L36N_GCLK14_0
+127		io	line	t		IO_L36P_GCLK15_0
+128		pwr	line	t		VCCINT
+129		pwr	line	t		VCCAUX
+130		pwr	line	t		GND
+131		io	line	t		IO_L35N_GCLK16_0
+132		io	line	t		IO_L35P_GCLK17_0
+133		io	line	t		IO_L34N_GCLK18_0
+134		io	line	t		IO_L34P_GCLK19_0
+135		pwr	line	t		VCCO_0
+136		pwr	line	t		GND
+137		io	line	t		IO_L4N_0
+138		io	line	t		IO_L4P_0
+139		io	line	t		IO_L3N_0
+140		io	line	t		IO_L3P_0
+141		io	line	t		IO_L2N_0
+142		io	line	t		IO_L2P_0
+143		io	line	t		IO_L1N_VREF_0
+144		io	line	t		IO_L1P_HSWAPEN_0

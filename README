@@ -1,0 +1,16 @@
+Pandaboard FPGA and data-acquisition expansion:  Hardware and FPGA sources
+--------------------------------------------------------------------------
+
+hardware/  gEDA design files (gschem and pcb)
+  |
+  | gschem-sym/    gschem symbols and pin assignments
+  | pcb-elements/  pcb footprints
+
+fpga/      Spartan-6 FPGA sources
+  |
+  | modules/       HDL for FPGA modules 
+  | synth/         Bitstream build support 
+                   (requires Xilinx ISE Webpack install) 
+
+tools/     Miscellaneous tools
+

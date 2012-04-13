@@ -1,0 +1,2 @@
+verilog work "../pandadaq-test/blinky.v"
+verilog work "../pandadaq-test/pandadaq.v"

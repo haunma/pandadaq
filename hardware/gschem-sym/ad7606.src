@@ -1,0 +1,121 @@
+# This is the template file for creating symbols with tragesym						
+# every line starting with '#' is a comment line.						
+# save it as text file with tab separated cells and start tragesym						
+						
+[options]						
+# wordswap swaps labels if the pin is on the right side an looks like this:						
+# "PB1 (CLK)". That's useful for micro controller port labels						
+# rotate_labels rotates the pintext of top and bottom pins						
+# this is useful for large symbols like FPGAs with more than 100 pins						
+# sort_labels will sort the pins by it's labels						
+# useful for address ports, busses, ...						
+wordswap	yes					
+rotate_labels	yes					
+sort_labels	no					
+generate_pinseq	yes					
+sym_width	4000					
+pinwidthvertical	200					
+pinwidthhorizontal	200					
+						
+[geda_attr]						
+# name will be printed in the top of the symbol						
+# if you have a device with slots, you'll have to use slot= and slotdef=						
+# use comment= if there are special information you want to add						
+version	20060113 1					
+name	AD7606					
+device	AD7606					
+refdes	U?					
+footprint						
+description	8-channel 16-bit ADC					
+documentation	http://www.analog.com/					
+author	Mark Haun <haunma(AT)keteu.org>					
+numslots	0					
+dist-license						
+use-license						
+#slot	1					
+#slotdef	1:					
+#slotdef	2:					
+#slotdef	3:					
+#slotdef	4:					
+#comment						
+#comment						
+#comment						
+						
+[pins]						
+# tabseparated list of pin descriptions						
+#						
+# pinnr is the physical number of the pin						
+# seq is the pinseq= attribute, leave it blank if it doesn't matter						
+# type can be (in, out, io, oc, oe, pas, tp, tri, clk, pwr)						
+# style can be (line,dot,clk,dotclk,none). none if only want to add a net						
+# posit. can be (l,r,t,b) or empty for nets						
+# net specifies the name of the net. Vcc or GND for example.						
+# label represents the pinlabel.						
+#	negation lines can be added with "\_" example: \_enable\_ 					
+#	if you want to write a "\" use "\\" as escape sequence					
+#						
+#pinnr	seq	type	style	posit.	net	label
+1		pwr	line	l		AVCC
+2		pwr	line	l		AGND
+3		in	line	l		OS0
+4		in	line	l		OS1
+5		in	line	l		OS2
+6		in	line	l		\_PAR\__SER_BYTESEL
+7		in	line	l		\_STBY\_
+8		in	line	l		RANGE
+9		in	line	l		CONVST_A
+10		in	line	l		CONVST_B
+11		in	line	l		RESET
+12		in	line	l		\_RD\__SCLK
+13		in	line	l		\_CS\_
+14		out	line	l		BUSY
+15		out	line	l		FIRSTDATA
+16		out	line	l		DB0
+17		out	line	b		DB1
+18		out	line	b		DB2
+19		out	line	b		DB3
+20		out	line	b		DB4
+21		out	line	b		DB5
+22		out	line	b		DB6
+23		pwr	line	b		VDRIVE
+24		out	line	b		DB7_DOUTA
+25		out	line	b		DB8_DOUTB
+26		pwr	line	b		AGND
+27		out	line	b		DB9
+28		out	line	b		DB10
+29		out	line	b		DB11
+30		out	line	b		DB12
+31		out	line	b		DB13
+32		out	line	b		DB14_HBEN
+33		out	line	r		DB15_BYTESEL
+34		in	line	r		REFSELECT
+35		pwr	line	r		AGND
+36		io	line	r		REGCAP
+37		pwr	line	r		AVCC
+38		pwr	line	r		AVCC
+39		io	line	r		REGCAP
+40		pwr	line	r		AGND
+41		pwr	line	r		AGND
+42		io	line	r		REFIN_REFOUT
+43		pwr	line	r		REFGND
+44		io	line	r		REFCAPA
+45		io	line	r		REFCAPB
+46		pwr	line	r		REFGND
+47		pwr	line	r		AGND
+48		pwr	line	r		AVCC
+49		in	line	t		V1
+50		in	line	t		V1GND
+51		in	line	t		V2
+52		in	line	t		V2GND
+53		in	line	t		V3
+54		in	line	t		V3GND
+55		in	line	t		V4
+56		in	line	t		V4GND
+57		in	line	t		V5
+58		in	line	t		V5GND
+59		in	line	t		V6
+60		in	line	t		V6GND
+61		in	line	t		V7
+62		in	line	t		V7GND
+63		in	line	t		V8
+64		in	line	t		V8GND
